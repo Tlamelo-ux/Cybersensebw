@@ -1,0 +1,53 @@
+/* ANIMATIONS */
+@keyframes pulse {
+    0% { box-shadow: 0 4px 15px rgba(0,51,160,0.1); }
+    100% { box-shadow: 0 4px 25px rgba(210,16,52,0.15); }
+}
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+}
+@keyframes gentlePulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.005); }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+/* ANIMATED ELEMENTS */
+.cyber-container {
+    animation: pulse 6s infinite alternate !important;
+}
+.bounce-arrow {
+    animation: bounce 2s infinite !important;
+}
+.waving-flag {
+    animation: wave 3s infinite !important;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+.delayed-flag {
+    animation: wave 3s infinite 0.5s !important;
+}
+.form-box {
+    animation: gentlePulse 8s infinite !important;
+}
+.security-badge {
+    animation: blink 2s infinite !important;
+}
