@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CyberSense Hub</title>
+</head>
+<body>
+    <h1>Welcome to CyberSense Hub!</h1>
+    <p>Botswana's first youth-led cybersecurity platform.</p>
+    <a href="https://forms.gle/YOUR-LINK">Report a Scam (Anonymous)</a>
+</body>
+</html>
