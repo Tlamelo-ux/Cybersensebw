@@ -1,11 +1,73 @@
-<div style="text-align: center; max-width: 700px; margin: 0 auto; padding: 20px;">
-    <h2 style="color: #D21034;">SHARE YOUR STORY</h2>
-    <p style="margin-bottom: 20px;">Your report is anonymous. Help create a safe cyberspace in Botswana!</p>
+<div style="max-width: 700px; margin: 20px auto; padding: 25px; 
+           background: linear-gradient(to right, #f8f9fa, #ffffff); 
+           border-radius: 15px; box-shadow: 0 4px 15px rgba(0,51,160,0.1);
+           border-left: 5px solid #D21034;
+           animation: pulse 6s infinite alternate;">
+
+    <!-- Animated header -->
+    <h2 style="color: #0033A0; font-family: 'Arial Black', sans-serif; text-align: center; 
+               margin-bottom: 10px; animation: fadeIn 1.5s ease-in;">
+        <span style="color: #D21034; animation: bounce 2s infinite;">➜</span> 
+        SHARE YOUR CYBER STORY
+    </h2>
+
+    <!-- Flag wave animation -->
+    <p style="text-align: center; color: #555; font-size: 1.1em; margin-bottom: 25px;">
+        <span style="display: inline-block; animation: wave 3s infinite; transform-origin: 70% 70%;">🇧🇼</span> 
+        Your anonymous report helps protect Botswana's youth 
+        <span style="display: inline-block; animation: wave 3s infinite 0.5s; transform-origin: 70% 70%;">🇧🇼</span>
+    </p>
     
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSefldSdMHl2bDtj_25hQZe1ztFRQW3SyMDlTiFoAAWM4WkVVw/viewform?embedded=true&usp=pp_url" 
-            width="100%" 
-            height="800"
-            style="border: none;"
-            loading="lazy">
-    </iframe>
+    <!-- Pulsing form container -->
+    <div style="background: white; padding: 15px; border-radius: 8px; 
+                box-shadow: inset 0 0 8px rgba(0,0,0,0.05);
+                animation: gentlePulse 8s infinite;">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSefldSdMHl2bDtj_25hQZe1ztFRQW3SyMDlTiFoAAWM4WkVVw/viewform?embedded=true&usp=pp_url" 
+                width="100%" 
+                height="800"
+                style="border: none;"
+                loading="lazy">
+        </iframe>
+    </div>
+    
+    <!-- Blinking security badge -->
+    <div style="text-align: center; margin-top: 20px;">
+        <small style="color: #888; animation: blink 2s infinite;">
+            🔒 100% anonymous • Powered by CyberSense BW
+        </small>
+    </div>
 </div>
+
+<style>
+    /* Animation definitions */
+    @keyframes pulse {
+        0% { box-shadow: 0 4px 15px rgba(0,51,160,0.1); }
+        100% { box-shadow: 0 4px 25px rgba(210,16,52,0.15); }
+    }
+    @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-5px); }
+    }
+    @keyframes wave {
+        0% { transform: rotate(0deg); }
+        10% { transform: rotate(14deg); }
+        20% { transform: rotate(-8deg); }
+        30% { transform: rotate(14deg); }
+        40% { transform: rotate(-4deg); }
+        50% { transform: rotate(10deg); }
+        60% { transform: rotate(0deg); }
+        100% { transform: rotate(0deg); }
+    }
+    @keyframes gentlePulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.005); }
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+    @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.7; }
+    }
+</style>
