@@ -1,34 +1,227 @@
-<link rel="stylesheet" href="styles.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSense BW - Protecting Botswana's Youth</title>
+    <style>
+        /* === Botswana Colors === */
+        :root {
+            --botswana-blue: #0033A0;
+            --botswana-red: #D21034;
+            --botswana-light: #f8f9fa;
+        }
+        
+        /* === Animations === */
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+        @keyframes wave {
+            0% { transform: rotate(0deg); }
+            10% { transform: rotate(14deg); }
+            20% { transform: rotate(-8deg); }
+            30% { transform: rotate(14deg); }
+            40% { transform: rotate(-4deg); }
+            50% { transform: rotate(10deg); }
+            60% { transform: rotate(0deg); }
+            100% { transform: rotate(0deg); }
+        }
+        
+        /* === Core Styles === */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px 5px;
+            transition: all 0.3s ease;
+        }
+        .btn-primary {
+            background: white;
+            color: var(--botswana-blue);
+        }
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        /* === Header === */
+        header {
+            background: linear-gradient(135deg, var(--botswana-blue) 0%, var(--botswana-red) 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .hero-icon {
+            font-size: 3em;
+            animation: bounce 2s infinite;
+            display: block;
+            margin-bottom: 20px;
+        }
+        
+        /* === Features === */
+        .features {
+            padding: 60px 0;
+        }
+        .features-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .feature-card {
+            flex: 1;
+            min-width: 280px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-card h3 {
+            color: var(--botswana-blue);
+            margin-top: 0;
+        }
+        
+        /* === Report Section === */
+        .report-section {
+            background: var(--botswana-light);
+            padding: 60px 0;
+            text-align: center;
+        }
+        .form-container {
+            max-width: 700px;
+            margin: 30px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .flag {
+            animation: wave 3s infinite;
+            transform-origin: 70% 70%;
+            display: inline-block;
+        }
+        .delayed-flag {
+            animation-delay: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header>
+        <div class="container">
+            <div class="hero-icon">🛡️</div>
+            <h1>CYBER ARMOR FOR BOTSWANA YOUTH</h1>
+            <p style="font-size: 1.2em; max-width: 600px; margin: 0 auto 25px;">
+                Learn to spot digital threats in <strong>3 minutes</strong> or less
+            </p>
+            <a href="#learn" class="btn btn-primary">START LEARNING</a>
+            <a href="#report" class="btn btn-secondary">REPORT A THREAT</a>
+        </div>
+    </header>
 
-<div class="cyber-container" style="max-width: 700px; margin: 20px auto; padding: 25px; 
-           background: linear-gradient(to right, #f8f9fa, #ffffff); 
-           border-radius: 15px; border-left: 5px solid #D21034;">
+    <!-- Quick Lessons -->
+    <section id="learn" class="features">
+        <div class="container">
+            <h2 style="text-align: center; color: var(--botswana-red); margin-bottom: 10px;">
+                ⏳ QUICK LESSONS THAT SAVE LIVES
+            </h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 40px;">
+                Botswana-specific examples to help you stay safe
+            </p>
+            
+            <div class="features-grid">
+                <!-- Card 1 -->
+                <div class="feature-card">
+                    <h3>🔍 Spot Fake Job Scams</h3>
+                    <p>Learn how to recognize "work from home" fraud that's targeting Botswana youth, with real examples from Gaborone.</p>
+                    <a href="#" style="color: var(--botswana-blue); font-weight: bold;">Read Guide →</a>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="feature-card">
+                    <h3>✋ Stop Revenge Porn</h3>
+                    <p>Your legal rights under Botswana's new laws, and how to get help if someone shares your intimate images.</p>
+                    <a href="#" style="color: var(--botswana-blue); font-weight: bold;">Know Your Rights →</a>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="feature-card">
+                    <h3>🛡️ Secure Your WhatsApp</h3>
+                    <p>Step-by-step guide to protect yourself from common scams circulating in Botswana WhatsApp groups.</p>
+                    <a href="#" style="color: var(--botswana-blue); font-weight: bold;">Get Protected →</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <h2 style="color: #0033A0; font-family: 'Arial Black', sans-serif; text-align: center; 
-               margin-bottom: 10px;">
-        <span class="bounce-arrow" style="color: #D21034;">➜</span> 
-        SHARE YOUR CYBER STORY
-    </h2>
-
-    <p style="text-align: center; color: #555; font-size: 1.1em; margin-bottom: 25px;">
-        <span class="waving-flag">🇧🇼</span> 
-        Your anonymous report helps protect Botswana's youth 
-        <span class="delayed-flag">🇧🇼</span>
-    </p>
-    
-    <div class="form-box" style="background: white; padding: 15px; border-radius: 8px; 
-                box-shadow: inset 0 0 8px rgba(0,0,0,0.05);">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSefldSdMHl2bDtj_25hQZe1ztFRQW3SyMDlTiFoAAWM4WkVVw/viewform?embedded=true&usp=pp_url" 
-                width="100%" 
-                height="800"
-                style="border: none;"
-                loading="lazy">
-        </iframe>
+    <!-- Threat Alert Banner -->
+    <div style="background: #FFF8E1; padding: 15px; text-align: center;
+                border-left: 4px solid var(--botswana-red); margin: 20px 0;">
+        <div class="container">
+            <strong>THIS WEEK'S ALERT:</strong> Fake DStv voucher scams in Francistown 
+            <a href="#" style="color: var(--botswana-blue); text-decoration: underline; margin-left: 10px;">Learn how to spot them →</a>
+        </div>
     </div>
-    
-    <div style="text-align: center; margin-top: 20px;">
-        <small class="security-badge" style="color: #888;">
-            🔒 100% anonymous • Powered by CyberSense BW
-        </small>
-    </div>
-</div>
+
+    <!-- Report Section -->
+    <section id="report" class="report-section">
+        <div class="container">
+            <h2 style="color: var(--botswana-blue);">
+                <span class="flag">🇧🇼</span> SHARE YOUR STORY <span class="flag delayed-flag">🇧🇼</span>
+            </h2>
+            <p style="max-width: 600px; margin: 0 auto 20px;">
+                Your anonymous report helps protect others in Botswana
+            </p>
+            
+            <div class="form-container">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSefldSdMHl2bDtj_25hQZe1ztFRQW3SyMDlTiFoAAWM4WkVVw/viewform?embedded=true&usp=pp_url" 
+                        width="100%" 
+                        height="800"
+                        style="border: none;"
+                        loading="lazy">
+                </iframe>
+            </div>
+            
+            <div style="margin-top: 30px;">
+                <small style="color: #666;">
+                    🔒 100% anonymous • Powered by CyberSense BW
+                </small>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: var(--botswana-blue); color: white; padding: 30px 0; text-align: center;">
+        <div class="container">
+            <p>© 2023 CyberSense BW | Protecting Botswana's Digital Future</p>
+            <p style="font-size: 0.9em; opacity: 0.8;">
+                Created by Botswana youth for Botswana youth
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
